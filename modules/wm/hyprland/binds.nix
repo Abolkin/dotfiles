@@ -125,7 +125,7 @@
 
   # Host-specific bindings
   hostSpecificBinds = {
-    "my-nixos" = {
+    "nixos" = {
       # Laptop-specific bindings
       "SUPER, 47" = "exec, caelestia-quickshell shell toggle launcher"; # 47 = semicolon
     };
@@ -138,7 +138,7 @@
 
   # Host-specific repeating bindings (binde)
   hostSpecificRepeatingBinds = {
-    "my-nixos" = {
+    "nixos" = {
       # Workspace increment/decrement for laptop
       "ALT, 59" = "workspace, -1"; # 60 = period key
       "ALT, 60" = "workspace, +1"; # 59 = comma key

@@ -18,7 +18,7 @@
   # Use stable kernel (for NVIDIA driver compatibility)
   boot.kernelPackages = pkgs.linuxPackages;
 
-  networking.hostName = "my-nixos";
+  networking.hostName = "nixos";
   networking.networkmanager.enable = true;
 
   # Time zone
