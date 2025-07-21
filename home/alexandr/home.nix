@@ -8,8 +8,8 @@
 }: let
   hostname = osConfig.networking.hostName or "unknown";
 in {
-  home.username = "alexandr";
-  home.homeDirectory = "/home/alexandr";
+  home.username = "aleksandr";
+  home.homeDirectory = "/home/aleksandr";
 
   imports =
     [

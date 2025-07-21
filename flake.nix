@@ -55,7 +55,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.extraSpecialArgs = {inherit inputs;};
-            home-manager.users.alexandr = import ./home/alexandr/home.nix;
+            home-manager.users.aleksandr = import ./home/aleksandr/home.nix;
           }
         ];
       };

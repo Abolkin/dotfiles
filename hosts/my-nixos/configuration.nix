@@ -94,9 +94,9 @@
   security.pam.services.sudo.fprintAuth = true;
 
   # Define a user account
-  users.users.alexandr = {
+  users.users.aleksandr = {
     isNormalUser = true;
-    description = "alexandr";
+    description = "aleksandr";
     extraGroups = ["networkmanager" "wheel" "docker"];
     shell = pkgs.fish;
   };
@@ -121,7 +121,7 @@
   programs._1password.enable = true;
   
   # Allow 1Password to be unlocked with system authentication
-  programs._1password-gui.polkitPolicyOwners = [ "alexandr" ];
+  programs._1password-gui.polkitPolicyOwners = [ "aleksandr" ];
 
   # System packages
   environment.systemPackages = with pkgs; [
