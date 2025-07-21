@@ -42,22 +42,22 @@
   # Enable the X11 windowing system
   services.xserver.enable = true;
 
-  # Enable NVIDIA drivers with Intel iGPU support
-  services.xserver.videoDrivers = ["modesetting" "nvidia"];
-
-  # Configure NVIDIA driver with PRIME offload
-  hardware.nvidia = {
-    open = false; # Use proprietary kernel modules
-
-    prime = {
-      offload.enable = true;
-      offload.enableOffloadCmd = true; # Creates nvidia-offload command
-
-      # PCI bus IDs - found using lspci
-      intelBusId = "PCI:0:2:0";
-      nvidiaBusId = "PCI:1:0:0";
-    };
-  };
+#  # Enable NVIDIA drivers with Intel iGPU support
+#  services.xserver.videoDrivers = ["modesetting" "nvidia"];
+#
+#  # Configure NVIDIA driver with PRIME offload
+#  hardware.nvidia = {
+#    open = false; # Use proprietary kernel modules
+#
+#    prime = {
+#      offload.enable = true;
+#      offload.enableOffloadCmd = true; # Creates nvidia-offload command
+#
+#      # PCI bus IDs - found using lspci
+#      intelBusId = "PCI:0:2:0";
+#      nvidiaBusId = "PCI:1:0:0";
+#    };
+#  };
 
 
   # Enable the GNOME Desktop Environment
@@ -94,9 +94,9 @@
   security.pam.services.sudo.fprintAuth = true;
 
   # Define a user account
-  users.users.tai = {
+  users.users.alexandr = {
     isNormalUser = true;
-    description = "tai";
+    description = "alexandr";
     extraGroups = ["networkmanager" "wheel" "docker"];
     shell = pkgs.fish;
   };
