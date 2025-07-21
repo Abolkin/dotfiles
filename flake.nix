@@ -42,7 +42,7 @@
     ...
   }: {
     nixosConfigurations = {
-      my-nixos = nixpkgs.lib.nixosSystem {
+      nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = {inherit inputs;};
         modules = [
@@ -55,7 +55,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.extraSpecialArgs = {inherit inputs;};
-            home-manager.users.tai = import ./home/tai/home.nix;
+            home-manager.users.alexandr = import ./home/alexandr/home.nix;
           }
         ];
       };

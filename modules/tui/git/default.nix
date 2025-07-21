@@ -7,8 +7,8 @@
   programs.git = {
     enable = true;
 
-    userName = "TLSingh1";
-    userEmail = "tai8910@gmail.com";
+    userName = "Abolkin";
+    userEmail = "syaka.abolkin@gmail.com";
 
     extraConfig = {
       init.defaultBranch = "main";
@@ -20,10 +20,10 @@
       # URL rewriting for different GitHub accounts
       url = {
         "git@github-personal:" = {
-          insteadOf = "https://github.com/TLSingh1/";
+          insteadOf = "https://github.com/Abolkin/";
         };
         "git@github-work:" = {
-          insteadOf = "https://github.com/TLSingh0/";
+          insteadOf = "https://github.com/Abolkin/";
         };
       };
 
@@ -39,8 +39,8 @@
   # Create conditional git config for work projects
   home.file.".config/git/work".text = ''
     [user]
-      name = TLSingh0
-      email = tai@streamex.com
+      name = Abolkin
+      email = syaka.abolkin@gmail.com
     [core]
       sshCommand = ssh -i ~/.ssh/id_rsa_work
   '';
